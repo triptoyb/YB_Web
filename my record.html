@@ -45,6 +45,7 @@
           <p> ▶ strong, u, h1~h6, p, br, img, width, li, ul, ol, title, meta, head, body, html, !doctype html, a, a href</p>
           <p> ▶ 이렇게 쓴 이유는? → 태그 안에 태그를 써넣는 방법을 아직 모르겠다...또르륵...</p>
         <p style="margin-top:55px;">
+          <hr>
       <h3>2020/08/10</h3>
         <p style="margin-top:35px;">
         <h4>1. 기억하고싶은 메모</h4>
@@ -57,5 +58,72 @@
           <p> ▶ pre tag : 모든 문장을 paragraph로 쓰려면 상당히 번잡한데, pre를 쓰면 내가 작성한 그대로 enter와 space 등이 보존이 된다. preserve해주는 태그라고 생각하면 된다.</p>
           <p> ▶ disqus를 이용한 댓글창 달기 : disqus 혹은 국산 livere를 통해서 댓글창을 달 수가 있다. 상당히 뿌듯하다.</p>
     <hr>
-  </body>
+    <h3>2020/08/19</h3>
+      <p style="margin-top:35px;">
+      <h4>1. 기억하고싶은 메모</h4>
+        <p>▶ 최근에 코딩 공부를 많이 하지 못했다. 네이버 카페에서 angularjs 라는 언어를 통해서 멋진 가계부 홈페이지를 만든 사람을 보았다. 나도 그렇게 되고 싶다!</p>
+      <p style="margin-top:35px;">
+      <h4>2. 오늘 배운 것</h4>
+        <p> ▶ table을 배웠다. 말그대로 표다. 대신에, 행 1개 안에 여러개의 열을 입력해주는 형식으로 쓴다. 행은 tr태그를 쓰고, 그 안에 th(표에 헤더부분. 약간 강조된다)태그나 td(일반적인 열)태그를 쓴다. </p>
+        <table border="3">
+          <h4> ▶ Cell that spans two columns:</h4>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th colspan="2">Phone</th>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>john.doe@example.com</td>
+            <td>123-45-678</td>
+            <td>212-00-546</td>
+          </tr>
+        </table>
+<p>'colspan 2를 주는 것은 열 2개를 차지하는 녀석입니다'라는 뜻이다.</p>
+          <h4>▶ Cell that spans two rows:</h4>
+          <table border="3">
+          <tr>
+            <th>Name:</th>
+            <td>John Doe</td>
+          </tr>
+          <tr>
+            <th>Email:</th>
+            <td>john.doe@example.com</td>
+          </tr>
+          <tr>
+            <th rowspan="2">Phone:</th>
+            <td>123-45-678</td>
+          </tr>
+          <tr>
+            <td>212-00-546</td>
+          </tr>
+        </table>
+        <p> ▶ 그리고 table 태그 자체에 border와 align을 넣을 수 있다. border는 해당 표의 테두리 굵기를 의미한다. border 자체를 넣어주지 않으면, 표가 테두리 없이 나타나게 된다.align은 정렬을 의미하며, table 안에 들어있기 때문에 표를 어느 위치에 정렬할 것인지를 의미한다.
+          <br><br>
+          ▶ 아래 표는 표 자체를 가운데 정렬 시켜주었으며, 표 테두리는 3이고, 표의 이름/직급/내선번호의 열 th 태그에 bgcolor attribute를 이용해서 gray 색을 넣었다. </p>
+
+          <table border="3" align="center">
+            <tr>
+              <th bgcolor="gray"> 이 름 </th>
+              <td align="center"> 개똥이 </td>
+            </tr>
+            <tr>
+              <th bgcolor="gray"> 직 급 </th>
+              <td align="center"> 대리 </td>
+            </tr>
+            <tr>
+              <th bgcolor="gray"> 내선번호 </th>
+              <td align="center"> 1234 </td>
+            </table>
+<p style="margin-top:35px;"> ▶ class attribute라는 것도 있는데, 이거 보니까 사실 지금 HTML 보다는 CSS할 때 사용되는 것 같다. 예를 들어서, 4개의 paragraph가 있다고 가정하고, 1,3번 문단의 글자는 빨간색으로, 2,4번 문단의 글자는 파란색으로 하고 싶다고 하자. font 태그를 주지 않는다고 했을 때, css를 선언해서 paragraph 색깔을 지정하면 4개의 문단이 전부 다 바뀌어버린다. 그 때 class attribute를 이용해서 1,3번 문단은 red라는 class로, 2,4번 문단은 blue라는 class로 지정을 할 수 있다. 그렇게 한 뒤에 p.red(red라는 class로 지정된 문단)의 색깔을 빨간색으로 하라는 스타일을 주게 되면 1,3번 문단의 글자색만 빨간색으로 변하게 된다!!</p>
+
+<p style="margin-top:35px;"> ▶ inline and block element. block level element는 다른 HTML을 위한 container로 사용된다. inline element는 일부의 text를 위한 container로 사용된다. </p>
+<div style="background-color:green; color:white; padding:20px;">
+      <p>Some paragraph text goes here.</p>
+      <p>Another paragraph goes here.</p>
+    </div>
+    <h2>나는 있잖아요
+      <span style="color:red">여기만 붉은색으로 강조</span>
+    하고 싶습니다</h2>
+</body>
 </html>
